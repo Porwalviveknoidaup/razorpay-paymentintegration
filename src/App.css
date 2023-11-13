@@ -1,38 +1,111 @@
-.App {
+.shop-container {
+  width: 100%;
+  background: #ddecec;
+}
+
+.shop-product-section {
+  width: 75%;
+}
+
+.product-summary-section {
+  width: 25%;
+  margin: 3vw 0;
+}
+.shop-section {
+  display: flex;
+  padding: 1vw 5vw;
+}
+.products-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  margin: 3vw 0;
+}
+.product-image {
+  width: 20%;
+  height: 100px;
+}
+
+.product-detail {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.product-counter {
+  width: 30%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.product-price {
+  width: 20%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+img {
+  height: 100px;
+  width: 110px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform .8s;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.countValue{
+  margin: 0 5px;
+}
+button{
+  cursor: pointer;
+}
+.product-price {
+  color: cornflowerblue;
+  font-size: 18px;
+  font-family: monospace;
+}
+.number-of-items {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  font-size: 18px;
+  margin: 1vw 0;
+}
+
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin: 1vw 0;
+}
+
+.place-order {
+  text-align: center;
+  margin: 2vw 0;
+}
+.place-order button{
   color: white;
+  font-size: 18px;
+  border: none;
+  background: cornflowerblue;
+  border-radius: 8px;
+  padding: 10px;
+}
+.place-order button:hover{
+  background: #3365c1;
 }
 
-.App-link {
-  color: #61dafb;
+.summary {
+  text-align: justify;
+  font-size: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shop-name {
+  text-align: center;
+  padding: 2vw 0 0 0;
+}
+.shop-name h2 {
+  margin: 0;
+}
+img:hover {
+  transform: rotate(-10deg);
+  mix-blend-mode: multiply;
+  transform: scale(1.5);
+  transition: transform .4s;
 }
